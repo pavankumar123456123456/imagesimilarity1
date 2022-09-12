@@ -4,17 +4,15 @@ import './index.css';
 import App from './routes';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { GlobalProvider } from './context/GlobalState';
 
 
 ReactDOM.render(
 
-  <GlobalProvider>
+  
     <BrowserRouter>
       <Route path="/" />
       <App />
-    </BrowserRouter>
-  </GlobalProvider>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -15,7 +15,7 @@ import { withRouter, useHistory, } from 'react-router-dom';
 import { localRoute } from '../../routes/localRoutes';
 import { styles } from "./DrawerStyle";
 import { useConfirm } from "material-ui-confirm";
-import taskmoLogo from "../../assets/images/taskmoLogo.svg";
+// import taskmoLogo from "../../assets/images/taskmoLogo.svg";
 
 const useStyles = makeStyles(styles);
 
@@ -108,7 +108,7 @@ const DrawerUI = React.memo((props) => {
                 }}
             >
                 <div className={classes.drawerHeader}>
-                    <img src={taskmoLogo} alt='noImage' style={{ width: "100%", height: "40px" }} />
+                    {/* <img src={taskmoLogo} alt='noImage' style={{ width: "100%", height: "40px" }} /> */}
                 </div>
                 <List>
                     <ListItem button onClick={(event) => handleListItemClick(event, 0)} selected={selectedIndex === 0}>
