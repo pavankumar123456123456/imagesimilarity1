@@ -64,10 +64,10 @@ const DrawerUI = React.memo((props) => {
     useEffect(() => {
         let total_url = window.location.pathname.split('/')
         let url = total_url[1];
-        if (url === "rapid-api") {
+        if (url === "model1") {
             setSelectedIndex(0)
         }
-        if (url === "sencha-express-api") {
+        if (url === "model2") {
             setSelectedIndex(1)
         }
     }, []);
@@ -83,6 +83,8 @@ const DrawerUI = React.memo((props) => {
         setPageTitle(splitStr.join(' '))
     }, [pageTitlePath])
 
+    // console.log(pageTitle, "checkpageTitle")
+
     return (
         <div className={classes.root}>
             <CssBaseline />
@@ -94,7 +96,7 @@ const DrawerUI = React.memo((props) => {
             >
                 <Toolbar style={{ background: "#232940" }} >
                     <div className={classes.toolBar} >
-                        {pageTitle === "" ? "RAPID API" : pageTitle.toLocaleUpperCase()}
+                        {pageTitle }
                     </div>
                 </Toolbar>
             </AppBar>
@@ -112,10 +114,10 @@ const DrawerUI = React.memo((props) => {
                 </div>
                 <List>
                     <ListItem button onClick={(event) => handleListItemClick(event, 0)} selected={selectedIndex === 0}>
-                        <ListItemText primary="RAPID API" />
+                        <ListItemText primary="MODEL 1" />
                     </ListItem>
                     <ListItem button onClick={(event) => handleListItemClick(event, 1)} selected={selectedIndex === 1}>
-                        <ListItemText primary="SENCHA EXPRESS API" />
+                        <ListItemText primary="MODEL 2" />
                     </ListItem>
                 </List>
 

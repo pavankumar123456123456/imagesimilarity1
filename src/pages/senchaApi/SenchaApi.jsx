@@ -35,7 +35,7 @@ const SenchaApi = () => {
     return (
         <div>
             <div style={{ textAlign: "center", fontSize: "20px", fontWeight: 600, marginBottom: "20px" }}>
-                Sencha Api range is in between 0 to 100. <span style={{ color: "green" }}>0 means perfect match</span>  and <span style={{ color: "red" }} >100 means not matching</span>.
+                MODEL 2 range is in between 0 to 100. <span style={{ color: "green" }}>0 means perfect match</span>  and <span style={{ color: "red" }} >100 means not matching</span>.
             </div>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
                 <div>

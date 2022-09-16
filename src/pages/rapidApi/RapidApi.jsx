@@ -49,7 +49,7 @@ const RapidApi = () => {
     return (
         <div>
             <div style={{ textAlign: "center", fontSize: "20px", fontWeight: 600, marginBottom: "20px" }}>
-                Rapid Api ranges between 0 to 1.<span style={{ color: "red" }} > 0 means not matching </span> and
+                MODEL 1 ranges between 0 to 1.<span style={{ color: "red" }} > 0 means not matching </span> and
                 <span style={{ color: "green" }} > 1 means perfect match</span>.
             </div>
 
